@@ -1,6 +1,6 @@
-### Faster R-CNN
+### Fast R-CNN
 
-##### 由于R-CNN的缺点，进而引申出Faster R-CNN。
+##### 由于R-CNN的缺点，进而引申出Fast R-CNN。
 
 ##### 1. 输入一张完整的图片
 ##### 2. 利用CNN卷积出feature map
@@ -8,6 +8,6 @@
 ##### 4. ROI pooling layer后添加全连接层
 ##### 5. 最后进行softmax层分类和回归预测物体框
 
-#### Faster R-CNN存在的问题：
+#### Fast R-CNN存在的问题：
 
 ##### 存在瓶颈，选择性搜索，搜索出所有的候选框。
