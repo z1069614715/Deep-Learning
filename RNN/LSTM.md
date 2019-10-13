@@ -36,3 +36,7 @@ LSTM 同样是RNN的结构，但是重复的模块拥有一个不同的结构:<b
 ![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly93czEuc2luYWltZy5jbi9sYXJnZS8wMDVCVnl6bWx5MWZvdG9reTI4emJqMzBqZzA2MDc0dy5qcGc?x-oss-process=image/format,png)
 <br>例如：在语言模型的例子中，因为他就看到了一个 代词，可能需要输出与一个 动词 相关的信息。例如，可能输出是否代词是单数还是负数，这样如果是动词的话，我们也知道动词需要进行的词形变化。
 
+##### LSTM变种 => GRU(Gates Recurrent Unit)
+GRU只有两种门结构`重置门(reset gate)`和`更新门(update gate)`
+`r(t)`表示重置门，`z(t)`表示更新门， 重置门决定是否将之前的状态忘记(相当于LSTM的遗忘门和输入门)，当`r(t)`趋向于0时，相当于`h(t-1)`给遗忘，更新门决定`h(^t)`的权重。
+![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly93czEuc2luYWltZy5jbi9sYXJnZS8wMDVCVnl6bWx5MWZvdG9taWZlZ2xqMzFlcTBmbzQwdi5qcGc?x-oss-process=image/format,png)
