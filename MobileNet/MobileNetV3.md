@@ -8,8 +8,14 @@ __MobileNetV3 是神经架构搜索得到的模型，其内部使用的模块继
 ### 互补搜索技术组合
 
 __资源受限的NAS:__
-计算和参数量受限的前提下搜索网络的各个模块，所以称之为模块级的搜索
+计算和参数量受限的前提下搜索网络的各个模块，所以称之为模块级的搜索  
+__对于NAS我自己的理解:__
+![](https://upload-images.jianshu.io/upload_images/13228477-6d9117293e2626ee.png?imageMogr2/auto-orient/strip|imageView2/2/w/821/format/webp)
+![](https://upload-images.jianshu.io/upload_images/13228477-0feb37e81181a249.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp)
+在限制的结构环境状态下，搜索出最优的神经网络结构，每一个网络结构进行相应的训练得到的训练时间和准确度对应就是要优化的参数了。  
+例如卷积层的卷积核size为3\*3还是5\*5，是带pooling还是不带  
 [杂谈NAS](https://blog.csdn.net/jinzhuojun/article/details/84698471)
+[NAS综述](https://www.jianshu.com/p/f0960ac7d28a)
 <br><br>
 __NetAdapt:__
 用于对各个模块确定之后网络层的微调
