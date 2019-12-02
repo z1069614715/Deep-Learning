@@ -9,6 +9,7 @@ __MobileNetV3 是神经架构搜索得到的模型，其内部使用的模块继
 
 __资源受限的NAS:__
 计算和参数量受限的前提下搜索网络的各个模块，所以称之为模块级的搜索
+[杂谈NAS](https://blog.csdn.net/jinzhuojun/article/details/84698471)
 <br><br>
 __NetAdapt:__
 用于对各个模块确定之后网络层的微调
