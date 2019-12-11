@@ -7,9 +7,9 @@ __3. 只调试过3层的神经网络，loss能顺利下降，等完善激活函�
 __4. 该版本调用一次forward和一次back_forward为一次训练过程。__  
 
 ##### 2019.12.11 更新记录
-__1. 优化add_layer函数里面的添加权重操作。__
-__2. 优化权重更新操作。__
-__3. 新增Activation.py文件，添加激活函数，暂时支持relu，sigmoid，tanh激活函数。__
-__4. 把forward函数和back_forward函数合并为fit函数，调用fit传上相关参数即可进行训练。__
-__5. 新增plt_loss函数，可以画出训练时候的loss值变化__
-__6. 新增训练时候的callback，对应在fit的参数里面，暂时只支持SaveBest，保存最好的模型参数和loss。__
+__1. 优化add_layer函数里面的添加权重操作。__  
+__2. 优化权重更新操作。__  
+__3. 新增Activation.py文件，添加激活函数，暂时支持relu，sigmoid，tanh激活函数。__  
+__4. 把forward函数和back_forward函数合并为fit函数，调用fit传上相关参数即可进行训练。__  
+__5. 新增plt_loss函数，可以画出训练时候的loss值变化__  
+__6. 新增训练时候的callback，对应在fit的参数里面，暂时只支持SaveBest，保存最好的模型参数和loss。__  
