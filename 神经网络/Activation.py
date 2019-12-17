@@ -26,5 +26,3 @@ class activation:
                 return x
             elif self.name == 'sigmoid':
                 return x * (1 - x)
-            elif self.name == 'softmax':
-                return x * (1 - x)
