@@ -1,7 +1,7 @@
 import numpy as np
 
 class activation:
-    activation_support = ['tanh', 'relu', 'sigmoid']
+    activation_support = ['tanh', 'relu', 'sigmoid', 'softmax']
 
     def __init__(self, name):
         assert name in self.activation_support, 'the {} activation unsupported in this neural network.'.format(name)
@@ -15,6 +15,9 @@ class activation:
                 return np.maximum(0, x)
             elif self.name == 'sigmoid':
                 return 1 / (1 + np.exp(-x))
+            elif self.name == 'softmax':
+                max_x = np.max(x, axis=1, keepdims=True)
+                return np.exp(x - max_x) / np.sum(np.exp(x - max_x), axis=1, keepdims=True)
         else:
             if self.name == 'tanh':
                 return 1 - x ** 2
@@ -22,4 +25,6 @@ class activation:
                 x[x > 0] = 1
                 return x
             elif self.name == 'sigmoid':
+                return x * (1 - x)
+            elif self.name == 'softmax':
                 return x * (1 - x)
