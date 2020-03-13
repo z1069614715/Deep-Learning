@@ -1,1 +1,6 @@
+### 基于YOLOV3与NasNetMobile的猫脸装饰
 
+目标检测模型尝试过Faster R-CNN，YOLOV3，经过效果速度对比，使用了YOLOV3。
+图像识别模型尝试过ResNet50，MobileNetV2，NasNetMobile，MobileNetV3，Inception-ResNetV2，其中NasNetMobile和Inception-ResNetV2效果不错，但是由于NasNetMobile参数量相对于Inception-ResNetV2少太多，因此选择NasNetMobile。
+
+通过YOLOV3于NasNetMobile得出图像中每只猫的特征点，进而计算装饰物的坐标，大小，角度，利用opencv进行图像操作。
